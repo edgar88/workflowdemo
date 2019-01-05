@@ -11,6 +11,8 @@ RUN mkdir -p /var/log/web
 WORKDIR /opt
 RUN git clone https://github.com/jimmy201602/workflowdemo.git
 WORKDIR /opt/workflowdemo
+#下一句升级pip是我自己加的
+RUN pip3 install --upgrade pip
 RUN pip3 install -r requirements.txt
 RUN python3 manage.py makemigrations
 RUN python3 manage.py migrate
