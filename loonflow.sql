@@ -22,7 +22,7 @@
 
 # Dump of table account_apptoken
 # ------------------------------------------------------------
-
+use loonflownew;
 DROP TABLE IF EXISTS `account_apptoken`;
 
 CREATE TABLE `account_apptoken` (
